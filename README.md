@@ -31,3 +31,31 @@ An interactive, high-performance developer workbench and multi-language algorith
 
 ```bash
 git clone https://github.com/vzopoiom-pixel/devrunner-algorithm-studio.git
+---
+npm install
+---
+npm run dev
+---
+npm run build
+---
+npm run preview
+---
+🛠️ Summary of All CLI Commands
+Command	Description
+git clone https://github.com/vzopoiom-pixel/devrunner-algorithm-studio.git	Download the project from GitHub
+cd devrunner-algorithm-studio	Enter the project directory
+npm install	Install all required packages & dependencies
+npm run dev	Launch local development server (localhost:3000)
+npm run build	Compile optimized production bundle to dist/
+npm run preview	Locally preview the compiled production build
+---
+🔧 Troubleshooting & Common Fixes
+<details>
+<summary><b>1. Error: <code>ENOENT: no such file or directory, open 'package.json'</code></b></summary>
+Cause: You are running npm install from C:\Windows\system32 or your root folder instead of inside the project folder.
+Fix:
+code
+Powershell
+cd C:\Users\Desktop\portfolio
+npm install
+---
