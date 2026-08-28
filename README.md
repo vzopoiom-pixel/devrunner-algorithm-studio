@@ -28,18 +28,25 @@ An interactive, high-performance developer workbench and multi-language algorith
 ---
 
 ### 1️⃣ Clone the Repository
-
 ```bash
 git clone https://github.com/vzopoiom-pixel/devrunner-algorithm-studio.git
----
+2️⃣ Navigate into the Project Folder
+code
+Bash
+cd devrunner-algorithm-studio
+3️⃣ Install Dependencies
+code
+Bash
 npm install
----
+4️⃣ Start Development Server
+code
+Bash
 npm run dev
----
+The application will start immediately at http://localhost:3000
+5️⃣ Build for Production (Optional)
+code
+Bash
 npm run build
----
-npm run preview
----
 🛠️ Summary of All CLI Commands
 Command	Description
 git clone https://github.com/vzopoiom-pixel/devrunner-algorithm-studio.git	Download the project from GitHub
@@ -47,8 +54,6 @@ cd devrunner-algorithm-studio	Enter the project directory
 npm install	Install all required packages & dependencies
 npm run dev	Launch local development server (localhost:3000)
 npm run build	Compile optimized production bundle to dist/
-npm run preview	Locally preview the compiled production build
----
 🔧 Troubleshooting & Common Fixes
 <details>
 <summary><b>1. Error: <code>ENOENT: no such file or directory, open 'package.json'</code></b></summary>
@@ -56,6 +61,20 @@ Cause: You are running npm install from C:\Windows\system32 or your root folder 
 Fix:
 code
 Powershell
-cd C:\Users\Desktop\portfolio
+cd C:\Users\RADIK\Desktop\portfolio
 npm install
----
+</details>
+<details>
+<summary><b>2. Error: <code>"-portfolio\node_modules\.bin\" is not recognized</code> (Windows)</b></summary>
+Cause: The folder name contains an ampersand (&) or space, causing Windows PowerShell to split the path.
+Fix: Rename the folder to a clean name like portfolio and run:
+code
+Powershell
+cd C:\Users\RADIK\Desktop\portfolio
+npm run dev
+</details>
+<details>
+<summary><b>3. Command not found: <code>git</code> or <code>npm</code></b></summary>
+Cause: The tools are not added to your system PATH or the terminal was not restarted after installation.
+Fix: Close and reopen PowerShell / Command Prompt.
+</details>
